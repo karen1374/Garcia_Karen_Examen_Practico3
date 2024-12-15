@@ -35,16 +35,16 @@ try {
     
     st = conexion.prepareStatement(sql);
 
-    // Asignar los valores a la sentencia SQL
+
     st.setString(1, nombre);
     st.setString(2, descripcion);
     st.setDouble(3, precioUnitario);
     st.setInt(4, stock);
 
-    // Ejecutar la sentencia
+
     st.executeUpdate();
 
-    // Redirigir a la página de productos (vendedor.jsp)
+   
     response.sendRedirect("vendedor.jsp");
 } catch (NumberFormatException e) {
     out.println("<p>Error: Verifica los datos numéricos (precioUnitario o stock).</p>");
@@ -54,7 +54,7 @@ try {
     
     if (st != null) {
         try {
-            st.close(); // Cerrar el statement
+            st.close(); 
         } catch (SQLException e) {
             out.println("<p>Error al cerrar el statement: " + e.getMessage() + "</p>");
         }
