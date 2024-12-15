@@ -97,13 +97,13 @@
                     int stock = rs.getInt("stock");
             %>
             <tr>
-                <td><%= idProducto %></td> <!-- Nueva columna ID -->
+                <td><%= idProducto %></td> 
                 <td><%= nombre %></td>
                 <td><%= descripcion %></td>
                 <td><%= precioUnitario %></td>
                 <td><%= stock %></td>
                 <td>
-                    <!-- Botones de editar y eliminar -->
+                    
                     <a class="btn btn-info" href="editarProducto.jsp?idProducto=<%= idProducto %>
 &nombre=<%= nombre %>
 &descripcion=<%= descripcion %>

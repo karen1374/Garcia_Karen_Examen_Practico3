@@ -16,7 +16,7 @@
 
 
 <%
-// Inicializar las variables necesarias
+// Inicializar las variables 
 PreparedStatement st = null;
 
 String nombre = request.getParameter("nombre");
@@ -25,14 +25,14 @@ String precioUnitarioParam = request.getParameter("precioUnitario");
 String stockParam = request.getParameter("stock");
 
 try {
-    // Convertir los parámetros numéricos a sus tipos correspondientes
+    
     double precioUnitario = Double.parseDouble(precioUnitarioParam);
     int stock = Integer.parseInt(stockParam);
 
     // Sentencia SQL para ingresar datos
     String sql = "INSERT INTO producto (nombre, descripcion, precioUnitario, stock) VALUES (?, ?, ?, ?)";
 
-    // Preparar la sentencia SQL
+    
     st = conexion.prepareStatement(sql);
 
     // Asignar los valores a la sentencia SQL
@@ -51,7 +51,7 @@ try {
 } catch (SQLException e) {
     out.println("<p>Error al ejecutar la consulta SQL: " + e.getMessage() + "</p>");
 } finally {
-    // Asegurarse de cerrar el PreparedStatement si fue creado
+    
     if (st != null) {
         try {
             st.close(); // Cerrar el statement

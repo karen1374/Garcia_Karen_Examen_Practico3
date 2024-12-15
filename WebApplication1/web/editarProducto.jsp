@@ -117,7 +117,7 @@
             ps.setInt(5, idProducto);
 
             ps.executeUpdate();
-            response.sendRedirect("vendedor.jsp"); // Redirige de vuelta a la lista de productos
+            response.sendRedirect("vendedor.jsp"); 
         } catch (SQLException e) {
             out.println("<p>Error al actualizar el producto: " + e.getMessage() + "</p>");
         }

@@ -17,10 +17,10 @@
 
 
 <%
-    // Obtener el idProducto desde la URL
+    // Obtener el idProducto 
     int idProducto = Integer.parseInt(request.getParameter("idProducto"));
 
-    // Procesar la eliminación cuando se envía el formulario
+    
     if ("POST".equalsIgnoreCase(request.getMethod())) {
         try {
             PreparedStatement ps = conexion.prepareStatement("DELETE FROM producto WHERE idProducto = ?");
@@ -28,7 +28,7 @@
             ps.executeUpdate();
             // Redirigir a vendedor.jsp después de eliminar el producto
             response.sendRedirect("vendedor.jsp");
-            return; // Detiene la ejecución del JSP aquí mismo
+            return; 
         } catch (Exception e) {
             out.println("<p>Error al eliminar el producto: " + e.getMessage() + "</p>");
         }

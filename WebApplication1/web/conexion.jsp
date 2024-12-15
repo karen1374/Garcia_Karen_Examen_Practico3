@@ -11,13 +11,13 @@
     Connection conexion = null;
 
     try {
-        // Cargar el driver JDBC (MySQL Connector 5.1)
+        
         Class.forName("com.mysql.jdbc.Driver");
 
         // Establecer la conexión a la base de datos
         conexion = DriverManager.getConnection("jdbc:mysql://localhost/bdexagarcia175", "ugarcia", "ud123");
 
-        // Almacenar la conexión en el contexto de la aplicación
+       
         application.setAttribute("conexion", conexion);
 
         // Mensaje de éxito

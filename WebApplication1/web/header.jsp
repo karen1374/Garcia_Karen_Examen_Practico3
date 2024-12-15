@@ -12,7 +12,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Header Centrado</title>
         <style>
-            /* Estilos básicos */
+          
             body {
                 margin: 0;
                 padding: 0;
@@ -20,9 +20,9 @@
             }
             header {
                 display: flex;
-                justify-content: center; /* centrar el contenido de Header */
+                justify-content: center; 
                 align-items: center;
-                background-color: #89A8B2; /* barra de color */
+                background-color: #89A8B2; 
                 color: white;
                 padding: 10px 20px;
                 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -32,7 +32,7 @@
                 align-items: center;
             }
             .logo {
-                height: 86px; /* Tamaño del logo */
+                height: 86px; 
                 margin-right: 15px;
             }
             .nombre-empresa {
@@ -49,7 +49,7 @@
                 <img src="img/ballena.png" alt="Logo de la Empresa" class="logo"> <!--logo de la empresa -->
                 
                 
-                <div class="nombre-empresa">TecnoZone</div> <!--Nombre de la empresa -->
+                <div class="nombre-empresa">TecnoZone</div> 
             </div>
         </header>
         
