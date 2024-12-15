@@ -69,7 +69,7 @@
 <div class="container">
     <h2>Lista de Productos</h2>
 
-    <!-- Botón para agregar un nuevo producto -->
+   
     <a href="altaProductos.jsp" class="btn btn-success btn-add">Nuevo Producto</a>
 
     <table class="table table-striped table-bordered mt-4">
